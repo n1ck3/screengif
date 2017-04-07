@@ -27,7 +27,6 @@ import time
 import datetime
 import tempfile
 from PIL import Image, ImageGrab
-import Clipboard
 
 arguments = docopt(__doc__, version="Screen Gif 0.8")
 
@@ -101,7 +100,6 @@ def main():
 
     Invokes the other functions.
     """
-
 
     if DEBUG:
         print "Printing debug information."
