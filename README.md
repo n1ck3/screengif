@@ -31,8 +31,8 @@ Actually running screengif
 
 # TODO:
 
-- [ ] Add proper argument handling
-- [ ] Add possibility to *only* copy to clipboard
+- [x] Add proper argument handling
+- [-] Add possibility to *only* copy to clipboard
 - [ ] Add support for linux
 - [ ] Optimize execution
 - [ ] Add menubar (taskbar) item to manage the app
