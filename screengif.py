@@ -49,11 +49,12 @@ def main():
     """
 
     clipboard = False
-    if len(sys.argv) > 1 and sys.argv[1] == "-c" or sys.argv[1] == "--clipboard":
-        clipboard = True
-    else:
-        print "Unrecognized option: %s" % sys.argv[1]
-        sys.exit(1)
+    if len(sys.argv) > 1:
+        if sys.argv[1] == "-c" or sys.argv[1] == "--clipboard":
+            clipboard = True
+        else:
+            print "Unrecognized option: %s" % sys.argv[1]
+            sys.exit(1)
 
     images = grab_screen(GRAB_INTERVAL, DURATION)
 
